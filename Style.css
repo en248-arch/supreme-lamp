@@ -1,0 +1,190 @@
+/* Resetim bazë */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilimi i trupit të faqes */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+/* Navigacioni kryesor */
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    bottom: 0;
+}
+nav ul {
+    display: flex; /* Layout horizontal për lidhjet e navigimit */
+    justify-content: center; /* Qendron lidhjet në mes */
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ff6347; /* Ndryshim ngjyre në hover */
+}
+
+/* Stili i seksioneve */
+section {
+    padding: 50px;
+    text-align: center;
+}
+section:nth-child(odd) {
+    background-color: #fff; /* Ngjyrë e bardhë për seksionet tek */
+}
+section:nth-child(even) {
+    background-color: #f0f0f5; /* Ngjyrë gri e lehtë për seksionet çift */
+}
+
+/* Seksioni Home */
+#home {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    place-items: center; /* Qendron përmbajtjen në mes të ekranit */
+    height: 100vh; /* Merr të gjithë lartësinë e dritares */
+    background: url('code.png') no-repeat center/cover; /* Sfond i personalizuar */
+    color: white;
+}
+    #home h1 {
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 3rem;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: black;
+    }
+    #home p {
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 1.2rem;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: black;
+    }
+
+/* Seksioni About Me */
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dy kolona të barabarta */
+    align-items: center;
+    gap: 20px; /* Hapësirë mes kolonave */
+}
+#about p, #about a {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+}
+#about img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #333; /* Kufij për imazhin */
+}
+
+/* Seksioni Projects */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kolona dinamike bazuar në madhësinë e ekranit */
+    gap: 20px;
+    padding: 20px;
+}
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Seksioni Education & Experience */
+#education {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#education ul {
+    list-style: none;
+}
+#education li {
+    background: #fff;
+    padding: 10px 15px;
+    border-left: 5px solid #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Seksioni Contact */
+#contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 20px;
+}
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+form button:hover {
+    background-color: #ff6347; /* Ndryshim ngjyre në hover */
+}
+
+/* Seksioni Blog */
+#blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+article img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer ose shtesa opsionale */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
