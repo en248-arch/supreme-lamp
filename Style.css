@@ -1,190 +1,289 @@
-/* Resetim bazë */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Stilimi i trupit të faqes */
+/* Stilet bazÃ« */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f9;
     margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-/* Navigacioni kryesor */
 header {
-    background-color: black;
-    color: white;
+    background: orange;
+    color: #fff;
     padding: 10px 0;
-    bottom: 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-nav ul {
-    display: flex; /* Layout horizontal për lidhjet e navigimit */
-    justify-content: center; /* Qendron lidhjet në mes */
+
+header nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-nav ul li {
+
+header nav ul li {
     margin: 0 15px;
 }
-nav ul li a {
-    color: white;
+
+header nav ul li a {
+    color: #3d3c3c;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
-nav ul li a:hover {
-    color: #ff6347; /* Ndryshim ngjyre në hover */
+
+header nav ul li a:hover {
+    color: black;
 }
 
-/* Stili i seksioneve */
+/* Seksionet */
 section {
-    padding: 50px;
+    padding: 40px 20px;
     text-align: center;
 }
-section:nth-child(odd) {
-    background-color: #fff; /* Ngjyrë e bardhë për seksionet tek */
-}
-section:nth-child(even) {
-    background-color: #f0f0f5; /* Ngjyrë gri e lehtë për seksionet çift */
+
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
-/* Seksioni Home */
-#home {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    place-items: center; /* Qendron përmbajtjen në mes të ekranit */
-    height: 100vh; /* Merr të gjithë lartësinë e dritares */
-    background: url('code.png') no-repeat center/cover; /* Sfond i personalizuar */
-    color: white;
-}
-    #home h1 {
-        background-color: black;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        font-size: 3rem;
-        -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color: black;
-    }
-    #home p {
-        background-color: black;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        font-size: 1.2rem;
-        -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color: black;
-    }
-
-/* Seksioni About Me */
-#about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dy kolona të barabarta */
-    align-items: center;
-    gap: 20px; /* Hapësirë mes kolonave */
-}
-#about p, #about a {
-    text-align: left;
-    margin: 0 auto;
-    max-width: 500px;
-}
-#about img {
-    max-width: 100%;
-    border-radius: 50%;
-    border: 5px solid #333; /* Kufij për imazhin */
-}
-
-/* Seksioni Projects */
-#projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kolona dinamike bazuar në madhësinë e ekranit */
-    gap: 20px;
-    padding: 20px;
-}
-.project {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.project img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-/* Seksioni Education & Experience */
-#education {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: left;
+section p, section ul {
     max-width: 800px;
     margin: 0 auto;
 }
-#education ul {
-    list-style: none;
+
+#home {
+    background-color: #292826;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
 }
-#education li {
-    background: #fff;
-    padding: 10px 15px;
-    border-left: 5px solid #333;
+
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#home h1 {
+    color: orange;
+    font-size: 3rem;
     margin-bottom: 10px;
-    border-radius: 5px;
 }
+
+#home p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.about{
+    display: flex;
+}
+.about_me{
+    flex: 1;
+    
+}
+.bullet{
+    margin-right: 300px;
+}
+#about {
+    background-color: #333;
+    padding: 40px 20px;
+    text-align: center;
+ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #faf7f7;
+    line-height: 1.6;
+}
+
+#about h3 {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-top: 30px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.skills-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.skills-list li::before {
+    content: 'âœ”'; /* Custom checkmark icon */
+    color: #ff9800;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+}
+
+.skills-list li:hover {
+    color: #ff9800;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+/* Seksioni Projects*/
+#projects {
+    background-color: #292826; 
+    padding: 40px 20px;
+    color: #fff; 
+}
+
+
+.project {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    background: #333; 
+    border: 1px solid #db8f1d; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: left;
+    height: 360px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff; /* White text inside the cards */
+}
+
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 152, 0, 0.5); 
+}
+
+
+.project h3 {
+    margin: 10px;
+    font-size: 1.2rem;
+    color: #ff9800; 
+}
+
+
+.project p {
+    margin: 10px;
+    font-size: 0.9rem;
+    color: #eee;}
 
 /* Seksioni Contact */
-#contact {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
-    gap: 20px;
+.contact{
+    display: flex;
+    
 }
-form input, form textarea, form button {
+
+
+/* PÃ«r shtimin e animacioneve */
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section form input,
+.footer-section form textarea,
+.footer-section form button {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
-    font-size: 1rem;
 }
-form button {
-    background-color: #333;
-    color: white;
+
+.footer-section form button {
+    background-color: orange;
+    color: #333;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
-}
-form button:hover {
-    background-color: #ff6347; /* Ndryshim ngjyre në hover */
+    transition: background-color 0.3s ease;
 }
 
-/* Seksioni Blog */
-#blog {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-article {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-article img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.footer-section form button:hover {
+    background-color: orange;
 }
 
-/* Footer ose shtesa opsionale */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+.footer-section a {
+    color: orange;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: orange;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
 }
