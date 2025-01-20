@@ -1,92 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="Style.css"> <!-- Lidhja me skedarin CSS -->
+    <link rel="stylesheet" href="style.css">   
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Navigacioni kryesor -->
+    <!-- Main Navigation -->
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education & Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#footer">Footer</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seksioni Home -->
-    <section id="home">
+<!-- Home Section -->
+<section id="home">
+    <div class="home-content">
         <h1>Welcome to My Portfolio</h1>
-        <p>Your journey into my world of coding starts here.</p>
-    </section>
+        <p>Welcome! I'm excited to share my journey in programming and technology. Explore my skills, projects, and the passion that drives me to create innovative solutions. Your journey into my world of coding starts here!</p>
+    </div>
+</section>
 
-    <!-- Seksioni About Me -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am a passionate programmer with a love for learning and creating.</p>
-        <p>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
-        </p>
-        <a href="CV.pdf" download="MyCV.pdf">Download My CV</a>
-    </section>
+<!-- About Me Section -->
+<section class="about" id="about">
+    <div class="about_me ">
+       <h2>About Me</h2>
+       <p>Hello! I'm a dedicated programmer with a passion for technology and problem-solving. I enjoy creating user-friendly applications and exploring innovative solutions to real-world challenges. My experience spans across C++, Java, Python, and web development frameworks.</p>
+       <p>When I'm not coding, I enjoy staying updated on tech trends, contributing to open-source projects, and learning about advancements in AI and machine learning.</p>
+    </div>
 
-    <!-- Seksioni Projects -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <img src="project1.png" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Descriptin of Project 1.</p>
-        </div>
-        <div class="project">
-            <img src="project2.png" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
-    </section>
-
-    <!-- Seksioni Education & Experience -->
-    <section id="education">
-        <h2>Education & Experience</h2>
-        <ul>
-            <li><strong>Bachelor in Technology And Information</strong> - Beder University </li>
-            <li><strong>Internship</strong> - Company Name</li>
+    <div class="bullet">
+     <ul class="skills-list">
+            <li>Programming languages: C++, Java, Python</li>
+            <li>Web development frameworks</li>
+            <li>AI and machine learning</li>
+            <li>Contributing to open-source projects</li>
         </ul>
+    </div>
+</section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 style="color: orange;">My Projects</h2>
+        <div class="project">
+
+            <h3>Calculator in C++</h3>
+            <p>This project is a basic console-based calculator that performs arithmetic operations. It allows users to select an operation, input two numbers, and view the result. <br>The program is designed to demonstrate structured programming in C++.</p>
+        </div>
+
+        <div class="project">
+
+            <h3>Menaxhimi i Librave në Java</h3>
+            <p>This project is a console-based application that allows users to manage a virtual library. <br>It provides a simple interface to add books, view all available books, and exit the program. <br>The program is designed to be user-friendly and demonstrates key concepts of Java programming like object-oriented principles, dynamic data structures, and control flow.</p>
+        </div>
     </section>
 
-    <!-- Seksioni Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
 
-    <!-- Seksioni Blog -->
-    <section id="blog">
-        <h2>Blog</h2>
-        <article>
-            <h3>Understanding JavaScript Closures</h3>
-            <p>JavaScript closures are a fundamental concept that allows functions to retain access to their lexical scope...</p>
-            <img src="blog1.png" alt="Blog Image">
-        </article>
-    </section>
+<!-- Footer -->
+<footer>
+    <div class="footer-container"id="footer">
+        <div class="footer-section">
+            <h3>Education & Experience</h3>
+            <ul>
+                <li><strong>Bachelor in Technology and Information</strong> - Beder University</li>
+                <li><strong>Internship</strong> - Company Name</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" style="margin-left: 10.5px; margin-top: 4px;">Send</button>
+            </form>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Me</h3>
+            <p>
+                <a href="https://www.linkedin.com/in/enes-kaloshi-58a253348" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/en248-arch" target="_blank">GitHub</a> |
+                <a href="Enes_Kaloshi.pdf" download="Enes_Kaloshi.pdf">Download My CV</a>
+            </p>
+        </div>
+    </div>
+
+</footer>
+<script>
+    // JavaScript to handle form submission
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form from submitting traditionally
+        
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const feedback = document.getElementById("form-feedback");
+
+        // Basic validation
+        if (name === "" || email === "" || message === "") {
+            feedback.textContent = "Please fill out all fields.";
+            feedback.style.color = "red";
+            return;
+        }
+
+        // Simple email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            feedback.textContent = "Please enter a valid email address.";
+            feedback.style.color = "red";
+            return;
+        }
+
+        const mailtoLink = `mailto:enes.kaloshi175@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(email)}`;
+        window.location.href = mailtoLink;
+        // Simulate email sending
+        feedback.textContent = "Thank you! Your message has been sent.";
+        feedback.style.color = "green";
+
+        // Clear form fields
+        document.getElementById("contact-form").reset();
+    });
+</script>
+
 </body>
 </html>
